@@ -12,6 +12,10 @@ const routes: Routes = [
     path: 'details',
     loadChildren: () => import('./pages/todo-details/todo-details.module').then( m => m.TodoDetailsPageModule)
   },
+  {
+    path: 'splash',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
+  },
 ];
 
 @NgModule({
